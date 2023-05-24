@@ -1,0 +1,1172 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body{
+width: 100%;
+height: 100%;
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+}
+
+html{background: #092346;}
+
+/* Fuentes Speciales */
+
+@font-face {
+	font-family: 'OswaldSemiBold';
+	src:url("fuentes/OswaldSemiBold.ttf")format('truetype');
+}
+
+@font-face {
+	font-family: 'LatoRegular';
+	src:url("fuentes/LatoRegular.ttf") format('truetype');
+}
+
+
+
+
+/* Menú */
+
+.logo:hover{transform: scale(1.1); }
+
+.menusup{overflow: hidden; background: #092346; padding-left: 80px; z-index:5; position: sticky; top: 0px; width: 100%; box-shadow: 0px 8px 16px rgb(0 0 0 / 25%);}
+
+.menusup a.logo{padding-top: 10px; padding-left: 30px; transition-duration: 0.3s; } 
+
+.menusup a{font-family: 'LatoRegular'; float: left; display:block; color: #FFF; text-align: center; margin-top:10px; margin-bottom: 10px; margin-left: 1px; margin-right: 1px; padding: 26px 30px; text-decoration: none; font-size: 16pt; font-weight: 400; transition: 0.2s;}
+
+.menusup .icono{overflow: hidden; display: none; margin-top: 10px; font-size: 12pt; padding-left: 30px; padding-right: 30px; font-weight: bolder;}
+
+.menusup a:hover {color: #FCC200;}
+
+#activo{color: #FCC200; padding: 26px 30px;}
+
+.contenedor-derecho {display: flex; justify-content: space-between; align-items: center; padding: 0 20px;}
+
+.search-box {margin-top: 38px; display: flex; align-items: center; margin-left: auto;}
+
+.search-box input[type="text"] {width: 200px; height: 40px; border: none; border-radius: 20px; padding: 0 20px; font-size: 16px; margin-right: -180px; background: #FCC200; margin-bottom: 10px;}
+
+.search-box button[type="submit"] {font-size: 24px; color: #FCC200; background-color: transparent; border: none; margin-left: 200px; margin-bottom: -26px;  }
+
+.profile-icon img {margin-top: 40px; width: 45px; height: 45px; border-radius: 50%; margin-left: 42px; margin-right: 55px;}
+
+#perfildeusuario{transition: transform 1s;}
+
+#perfildeusuario:hover{cursor: pointer; transform: matrix3d( 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -10, -30, 0.7); filter: saturate(150%) }
+
+/* Contenido */
+
+
+
+.imagen_fondo{background-image: url("imagenes/categoria_color.jpg"); height: 1500px; margin-top: -90px; background-size: cover; filter: brightness(30%); }
+
+
+
+.form-container h3{margin-top: 70px; white-space: nowrap; margin-left: 30px;}
+
+.form-container {
+  transform: translateY(4%);
+  transform: translateX(13%);
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 1px;
+  background-color: #092346;
+  border-radius: 10px;
+  margin-top: -1400px;
+}
+
+.form-title {
+  font-family: 'OswaldSemiBold';
+  font-size: 37px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+  margin-left: -300px;
+}
+
+.form-description {
+    font-family: 'LatoRegular';
+     margin-left: -100px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+    color: white;
+}
+
+.payment-method {
+    font-family: 'LatoRegular';
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 150px;
+}
+
+.payment-method-header {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.payment-method-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+    background: grey;
+    margin-left: 20px;
+    margin-top: -45px;
+}
+
+.payment-method-circle-two {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+    background:#0D2185;
+    margin-left: 20px;
+    margin-top: -64px;
+}
+
+.payment-method-circle:hover{
+    background:#0D2185;
+    filter:saturate(80%);
+}
+
+
+.payment-method-title {
+    font-family: 'OswaldSemiBold';
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+    margin-bottom: 130px;
+}
+
+.paypal p{
+    font-family: 'LatoRegular';
+   font-size: 17px;
+  margin-left: -112px;
+  color: #777;
+  margin-top: 20px; 
+}
+
+.credit-card p{
+    font-family: 'LatoRegular';
+  font-size: 17px;
+  margin-left: -237px;
+  color: #777;
+  margin-top: 50px;
+}
+
+.paypal img{
+    margin-left: 360px;
+}
+
+.credit-card img{
+    margin-left: 140px;
+}
+
+.payment-method.paypal {
+  background-color:aliceblue;
+  color: #fff;
+}
+
+.paypal p{
+margin-left: -100px;
+}
+
+.credit-card p{
+margin-left: -220px;
+}
+
+.payment-method.credit-card {
+  background-color: #FCC200;
+  color: #fff;
+}
+
+.camposparallenar{
+    padding-left: 60px;
+}
+
+.camposparallenar p{
+    font-family: 'LatoRegular';
+    font-size: 20px;
+    color: white;
+}
+
+
+.camposparallenar #numerodetarjetadecredito{
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+    font-weight: 500;
+   width: 580px;
+}
+
+.camposparallenar #codigocvv{
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+    font-weight: 500;
+  width: 170px;
+}
+
+#fecha_vencimiento{
+    margin-left: 208px;
+    margin-top: 16px;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+    font-weight: 500;
+  width: 170px;
+    height: 45px;
+}
+
+.fechadeexpiracion {
+    margin-top: -88px;
+    padding: 0px 0px 0px 200px;
+}
+
+.titulo-fechadeexpiracion{
+    margin-left: 200px;
+}
+
+.camposparallenar #nombreenlatarjeta{
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+    font-weight: 500;
+  width: 580px;
+}
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+ 
+}
+
+.return{
+padding: 14px 40px 10px 10px;
+font-size: 18px;
+border-radius: 10px;
+background-color: #FCC200;
+ border: none;
+}
+
+.submit{
+  padding: 14px 30px 10px 20px;
+font-size: 18px;  
+    margin-right: 70px;
+    border-radius: 10px;
+ background-color: #FCC200;
+ border: none;
+}
+
+.return:hover {
+  background-color: #104184;
+  color: #fff;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #104184;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.centrar {
+  text-align: center;
+    margin-bottom: 100px;
+    transform: translateY(-280%);
+  
+}
+
+.boton_atras {
+
+    margin-right: 50%;
+    font-family: 'LatoRegular';
+    margin-top: 10px;
+  display: inline-flex;
+  background-color: #FCC200;
+  color: black;
+  font-size: 24px;
+  padding: 20px 30px;
+  border-radius: 18px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.boton_atras:hover {
+  background-color: #010939; color: white;
+}
+
+.boton_atras i {
+  margin-right: 15px;
+}
+
+/* Footer */
+
+.footerconsulta{ font-family: 'LatoRegular'; width: 100%; top: 100px; float: left; position: relative; box-shadow: 0px -6px 10px rgba(0, 0, 0, 0.2) ; z-index: 2; padding: 25px 65px 30px; background: #092346; color: #FFC200; display: grid; grid-template-columns: auto auto auto auto auto; grid-template-rows: 180px 60px; gap: 0px 20px; margin-bottom: -120px; }
+
+.footerconsulta h2{font-size:20px; padding-bottom: 5px;}
+
+.footerconsulta h4{width: auto; font-weight: 300;}
+
+.h2{display: block; font-size: 1.8em; margin-block-start: 0.83em; margin-block-end: 0.83em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold; }
+
+.footerconsulta a{padding: 4px 10px; font-size: 14pt; text-decoration: none; transition: all 0.3s ease; color: #FFF;}
+
+.footerconsulta .logorrss{display: inline-block;}
+
+.fa{display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; webkit-font-smoothing: antialiased; moz-osx-font-smoothing: grayscale; }
+
+.footerconsulta .redessociales{padding-top: 20px; padding-right: 10px; padding-left: 35px; grid-area: 1/ 1/ 2/ 2;}
+
+.footerconsulta .redessociales a{padding: 0px 6px; font-size: 35pt;}
+
+.footerconsulta .titularuno{padding: 20px; grid-area: 1/ 2/ 2/ 2; }
+
+.footerconsulta .titulardos{padding: 20px; grid-area: 1/ 3/ 2/ 4; }
+
+.footerconsulta .titulartres{padding: 20px; grid-area: 1/ 4/ 2/ 4; }
+
+.footerconsulta .logofooter {padding-top: 20px; grid-area: 1/ 5/ 2/ 5; margin-right: -200px;}
+
+.footerconsulta .informacionlegal{font-size: 15px; padding-top: 34px; grid-column: 2/5; grid-row: 2/4; text-align: center;}
+
+.fa-instagram:hover, .fa-facebook-official:hover, .fa-twitter:hover{color: #FFC200; transform: scale(1.1);}
+
+.footerconsulta a:hover{color: #FFC200;}
+
+h4{display: block; margin-block-start: 1.33em; margin-block-end: 1.33em; margin-inline-start: 0px; margin-inline-end: 0px;
+	}q
+
+.footer{display: block;}
+
+/* Tablet @media */
+
+@media screen and (max-width:1024px){
+    
+	/* Menu */
+    
+ .contenedor-derecho {margin: 50px -30px 30px 40px;  display: flex; justify-content: space-between; align-items: center; padding: 0 20%;}
+.search-box {margin-top: 48px; display: flex; align-items: center; }
+.search-box input[type="text"] {width: 200px; height: 40px; border: none; border-radius: 20px; padding: 0 20px; font-size: 16px; margin-left: -1%; background: #FCC200; margin-bottom: 20px;}
+.search-box button[type="submit"] {font-size: 24px; color: #FCC200; background-color: transparent; border: none; margin-right: -80%; margin-bottom: 36px;  }
+.profile-icon img {margin-top: 30px; width: 45px; height: 45px; border-radius: 50%; margin-left: 60px;}  
+    
+
+
+    .form-container h3{margin-top: -60px; white-space: nowrap; margin-left: 30px;}
+
+.form-container {
+  transform: translateY(4%);
+  transform: translateX(1%);
+  max-width: 58%;
+  margin: 30px auto;
+  padding: 1px;
+  background-color: #092346;
+  border-radius: 10px;
+  margin-top: -1600px;
+}
+
+.form-title {
+
+  font-size: 37px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+  margin-left: -20%;
+}
+
+.form-description {
+
+     margin-left: 6%;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+    color: white;
+}
+
+.payment-method {
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 150px;
+}
+
+.payment-method-header {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.payment-method-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+    background: grey;
+    margin-left: 20px;
+    margin-top: -44px;
+}
+
+.payment-method-title {
+
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0px;
+}
+
+.paypal p{
+
+   font-size: 17px;
+  margin-left: -112px;
+  color: #777;
+  margin-top: 20px; 
+}
+
+.credit-card p{
+
+  font-size: 17px;
+  margin-left: -237px;
+  color: #777;
+  margin-top: 20px;
+}
+
+.paypal img{
+    margin-left: 200%;
+}
+
+.credit-card img{
+    margin-left: -17%;
+}
+
+.payment-method.paypal {
+  background-color:aliceblue;
+  color: #fff;
+}
+
+.paypal p{
+margin-left: -100px;
+}
+
+.credit-card p{
+margin-left: -220px;
+}
+
+.payment-method.credit-card {
+  background-color: #FCC200;
+  color: #fff;
+}
+
+.camposparallenar{
+    padding-left: 60px;
+}
+
+.camposparallenar p{
+
+    font-size: 20px;
+    color: white;
+}
+
+
+.camposparallenar #numerodetarjetadecredito{
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+    font-weight: 500;
+   width: 90%;
+}
+
+.camposparallenar #codigocvv{
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+    font-weight: 500;
+  width: 170px;
+}
+
+#fecha_vencimiento{
+    margin-left: 41%;
+    margin-top: 16px;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+    font-weight: 500;
+  width: 180px;
+    height: 45px;
+}
+
+.fechadeexpiracion {
+    margin-top: -98px;
+    padding: 0px 0px 0px 23%;
+}
+
+.titulo-fechadeexpiracion{
+    margin-left: 41%;
+    white-space: nowrap;
+}
+
+.camposparallenar #nombreenlatarjeta{
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+    font-weight: 500;
+  width: 90%;
+}
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+ 
+}
+
+.return{
+padding: 14px 40px 10px 10px;
+font-size: 18px;
+border-radius: 10px;
+background-color: #FCC200;
+ border: none;
+}
+
+.submit{
+  padding: 14px 30px 10px 20px;
+font-size: 18px;  
+    margin-right: 70px;
+    border-radius: 10px;
+ background-color: #FCC200;
+ border: none;
+}
+
+.return:hover {
+  background-color: #104184;
+  color: #fff;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #104184;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.centrar {
+  text-align: center;
+    margin-bottom: 150px;
+    transform: translateY(-260%);
+  
+}
+
+.boton_atras {
+
+    margin-right: 50%;
+
+    margin-top: 70px;
+  display: inline-flex;
+  background-color: #FCC200;
+  color: black;
+  font-size: 23px;
+  padding: 20px 30px;
+  border-radius: 18px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.boton_atras:hover {
+  background-color: #010939; color: white;
+}
+
+.boton_atras i {
+  margin-right: 15px;
+}
+
+
+}
+
+
+
+/* Celular @media */
+
+@media only screen and (max-width: 700px){
+    
+    /* Menu */
+    
+	.menusup a:not(:first-child){display:none;}
+	.menusup a.logo{padding-left: 0px; padding-right: 0px; margin-left: 20px;}
+	.menusup a.icono{float: right; display: block; margin-right: 5px; font-size: 30px;}
+	.menusup.responsivo a{float: none; display: block; text-align: left;}
+    input[type="text"][placeholder="Buscar..."] {position: absolute; left: 20%; top: 57%; transform: translateY(530%); }
+    button[type="submit"] i.fa.fa-search { position: absolute; left: 74%; top: 72%; transform: translateY(395%); }
+    .profile-icon {position: absolute; left: 76%; top: 21%; transform: translateY(623%);}
+
+    html{overflow-x: hidden; height: 100%; margin:0; padding:0; }
+    
+    .form-container h3{margin-top: -60px; white-space: nowrap; }
+
+.form-container {
+  transform: translateY(-158%);
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 1px;
+  background-color: #092346;
+  border-radius: 10px;
+}
+
+.form-title {
+
+  font-size: 37px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+  margin-left: -20%;
+}
+
+.form-description {
+ 
+     margin-left: 6%;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+    color: white;
+}
+
+.payment-method {
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 150px;
+}
+
+.payment-method-header {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.payment-method-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+    background: grey;
+    margin-left: 20px;
+    margin-top: -44px;
+}
+
+.payment-method-title {
+
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.paypal p{
+
+   font-size: 17px;
+  margin-left: -112px;
+  color: #777;
+  margin-top: 20px; 
+}
+
+.credit-card p{
+
+  font-size: 17px;
+  margin-left: -237px;
+  color: #777;
+  margin-top: 20px;
+}
+
+.paypal img{
+    position: sticky;
+    margin-left: 200%;
+}
+
+.credit-card img{
+    margin-left: -14%;
+}
+
+.payment-method.paypal {
+  background-color:aliceblue;
+  color: #fff;
+}
+
+.paypal p{
+margin-left: -100px;
+}
+
+.credit-card p{
+margin-left: -220px;
+}
+
+.payment-method.credit-card {
+  background-color: #FCC200;
+  color: #fff;
+}
+
+.camposparallenar{
+    padding-left: 60px;
+}
+
+.camposparallenar p{
+  
+    font-size: 20px;
+    color: white;
+}
+
+
+.camposparallenar #numerodetarjetadecredito{
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+    font-weight: 500;
+   width: 90%;
+}
+
+.camposparallenar #codigocvv{
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+    font-weight: 500;
+  width: 170px;
+}
+
+#fecha_vencimiento{
+    margin-left: 34%;
+    margin-top: 22px;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+    font-weight: 500;
+  width: 180px;
+    height: 45px;
+}
+
+.fechadeexpiracion {
+    margin-top: -98px;
+    padding: 0px 0px 0px 23%;
+}
+
+.titulo-fechadeexpiracion{
+    margin-left: 34%;
+    white-space: nowrap;
+}
+
+.camposparallenar #nombreenlatarjeta{
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+    font-weight: 500;
+  width: 90%;
+}
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+ 
+}
+
+.return{
+padding: 14px 40px 10px 10px;
+font-size: 18px;
+border-radius: 10px;
+background-color: #FCC200;
+ border: none;
+}
+
+.submit{
+  padding: 14px 30px 10px 20px;
+font-size: 18px;  
+    margin-right: 70px;
+    border-radius: 10px;
+ background-color: #FCC200;
+ border: none;
+}
+
+.return:hover {
+  background-color: #104184;
+  color: #fff;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #104184;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.centrar {
+  text-align: center;
+    margin-bottom: 150px;
+    transform: translateY(-180%);
+    white-space: nowrap;
+    margin-left: 80px;
+  
+}
+
+.boton_atras {
+
+    margin-right: 50%;
+    
+    margin-top: 70px;
+  display: inline-flex;
+  background-color: #FCC200;
+  color: black;
+  font-size: 32px;
+  padding: 20px 30px;
+  border-radius: 18px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.boton_atras:hover {
+  background-color: #010939; color: white;
+}
+
+.boton_atras i {
+  margin-right: 15px;
+}
+	
+    /* Footer */
+    
+    .footerconsulta{display: grid; grid-template-columns: auto; grid-template-rows: 110px 120px 170px 200px; grid-gap: 0px; padding: 35px 20px; text-align: center; top: -1360px; }
+	.footerconsulta .redessociales a{margin-top: -10px; font-size:55px; padding-bottom:0px;}
+	.footerconsulta .redessociales {padding-left: 17px; padding-top: 3px; padding-bottom: 5px; grid-column: 1/5; grid-row: 1/2;}
+	.footerconsulta .titularuno {padding-top: 8px; padding-bottom: 0px; grid-column: 1/5; grid-row: 2/2; }
+	.footerconsulta .titulardos {padding-top: 30px; grid-column: 1/5; grid-row: 3/4; }
+	.footerconsulta .titulartres {padding-top: 300px; grid-column: 1/5; grid-row: 2/3; }
+	.footerconsulta .logofooter {padding-top: 430px; grid-column: 1/5; grid-row: 2/2; margin-left: -220px;}
+	.footerconsulta .informacionlegal {text-align: center; padding-top: 60px; padding-right: 20px; padding-left: 20px; font-size: 10pt; grid-column: 1/5; grid-row: 5/5;}
+	.footerconsulta a{font-size: 18px;}
+	.footerconsulta h2{font-size: 18px; }
+	.footerconsulta h4 {width: auto;}
+    .footerconsulta a:hover{color: #FCC200;}
+
+
+}
+
+/* Celular mini @media */
+
+@media only screen and (max-width: 500px){
+    
+    .profile-icon{margin-left: -30px;}
+    
+   /* productos */
+
+    .header_{height: 430px; align-content: center;}
+    
+    .titulo_header{font-size: 30px; margin: 0px 0px 100px 70px;} 
+    
+    .cart_header{margin: 20px 0px -130px -200px; white-space: nowrap; }
+    
+    .buttons-container-header{margin-top: -10px; width: 770px; }
+    
+    .arrows{display: flex; margin-top: 10px; margin-left: 0px;}
+    
+            .verificadores {margin: -1899px -34% 0px 34%; filter: brightness(100%); margin-left: -20%; transform: scale(0.6) }
+
+    .form-container h3{margin-top: -60px; white-space: nowrap; margin-left: 30px;}
+
+.form-container {
+  transform: translateY(-144%);
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 1px;
+  background-color: #092346;
+  border-radius: 10px;
+}
+
+.form-title {
+
+  font-size: 37px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+  margin-left: 0%;
+}
+
+.form-description {
+
+     margin-left: 1%;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+    color: white;
+}
+
+.payment-method {
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 150px;
+}
+
+.payment-method-header {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.payment-method-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+    background: grey;
+    margin-left: 20px;
+    margin-top: -47px;
+}
+
+.payment-method-title {
+
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.paypal p{
+  
+   font-size: 17px;
+  margin-left: -112px;
+  color: #777;
+  margin-top: 20px; 
+}
+
+.credit-card p{
+
+  font-size: 17px;
+  margin-left: -237px;
+  color: #777;
+  margin-top: 20px;
+}
+
+.paypal img{
+    position: sticky;
+    margin-left: 80%;
+}
+
+.credit-card img{
+    margin-left: -94%;
+    margin-top: 120px;
+}
+
+.payment-method.paypal {
+  background-color:aliceblue;
+  color: #fff;
+}
+
+.paypal p{
+margin-left: -100px;
+}
+
+.credit-card p{
+margin-left: -220px;
+}
+
+.payment-method.credit-card {
+  background-color: #FCC200;
+  color: #fff;
+  height: 200px;
+}
+
+.camposparallenar{
+    padding-left: 60px;
+}
+
+.camposparallenar p{
+
+    font-size: 20px;
+    color: white;
+}
+
+
+.camposparallenar #numerodetarjetadecredito{
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+    font-weight: 500;
+   width: 90%;
+}
+
+.camposparallenar #codigocvv{
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+    font-weight: 500;
+  width: 120px;
+}
+
+#fecha_vencimiento{
+    margin-left: 25%;
+    margin-top: 16px;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+    font-weight: 500;
+  width: 170px;
+    height: 45px;
+}
+
+.fechadeexpiracion {
+    margin-top: -98px;
+    padding: 0px 0px 0px 23%;
+}
+
+.titulo-fechadeexpiracion{
+    margin-left: 25%;
+    white-space: nowrap;
+}
+
+.camposparallenar #nombreenlatarjeta{
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+    font-weight: 500;
+  width: 90%;
+}
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+ 
+}
+
+.return{
+padding: 14px 20px 10px 10px;
+font-size: 18px;
+border-radius: 10px;
+background-color: #FCC200;
+ border: none;
+}
+
+.submit{
+  padding: 14px 20px 10px 20px;
+
+font-size: 18px;  
+    margin-right: 30px;
+    border-radius: 10px;
+ background-color: #FCC200;
+ border: none;
+}
+
+.return:hover {
+  background-color: #104184;
+  color: #fff;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #104184;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.centrar {
+  text-align: center;
+    margin-bottom: 150px;
+    transform: translateY(-180%);
+    white-space: nowrap;
+    margin-left: 80px;
+  
+}
+
+.boton_atras {
+
+    margin-right: 15%;
+
+    margin-top: 70px;
+  display: inline-flex;
+  background-color: #FCC200;
+  color: black;
+  font-size: 20px;
+  padding: 20px 30px;
+  border-radius: 18px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.boton_atras:hover {
+  background-color: #010939; color: white;
+}
+
+.boton_atras i {
+  margin-right: 15px;
+}
+    
+    
+    }
+
+
+@media only screen and (max-width: 400px){
+}

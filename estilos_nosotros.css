@@ -1,0 +1,370 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body{
+width: 100%;
+height: 100%;
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+}
+
+
+
+
+/* Fuentes Speciales */
+
+@font-face {
+	font-family: 'OswaldSemiBold';
+	src:url("fuentes/OswaldSemiBold.ttf")format('truetype');
+}
+
+@font-face {
+	font-family: 'LatoRegular';
+	src:url("fuentes/LatoRegular.ttf") format('truetype');
+}
+
+/* Menú */
+
+
+
+.logo:hover{transform: scale(1.1); }
+
+.menusup{overflow: hidden; background: #092346; padding-left: 80px; z-index:5; position: sticky; top: 0px; width: 100%; box-shadow: 0px 8px 16px rgb(0 0 0 / 25%);}
+
+.menusup a.logo{padding-top: 10px; padding-left: 30px; transition-duration: 0.3s; } 
+
+.menusup a{font-family: 'LatoRegular'; float: left; display:block; color: #FFF; text-align: center; margin-top:10px; margin-bottom: 10px; margin-left: 1px; margin-right: 1px; padding: 26px 30px; text-decoration: none; font-size: 16pt; font-weight: 400; transition: 0.2s;}
+
+.menusup .icono{overflow: hidden; display: none; margin-top: 10px; font-size: 12pt; padding-left: 30px; padding-right: 30px; font-weight: bolder;}
+
+.menusup a:hover {color: #FCC200;}
+
+#activo{color: #FCC200; padding: 26px 30px;}
+
+.contenedor-derecho {display: flex; justify-content: space-between; align-items: center; padding: 0 20px;}
+
+.search-box {margin-top: 38px; display: flex; align-items: center; margin-left: auto;}
+
+.search-box input[type="text"] {width: 200px; height: 40px; border: none; border-radius: 20px; padding: 0 20px; font-size: 16px; margin-right: -180px; background: #FCC200; margin-bottom: 10px;}
+
+.search-box button[type="submit"] {font-size: 24px; color: #FCC200; background-color: transparent; border: none; margin-left: 200px; margin-bottom: -26px;  }
+
+.profile-icon img {margin-top: 40px; width: 45px; height: 45px; border-radius: 50%; margin-left: 42px; margin-right: 55px;}
+
+#perfildeusuario{transition: transform 1s;}
+
+#perfildeusuario:hover{cursor: pointer; transform: matrix3d( 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -10, -30, 0.7); filter: saturate(150%) }
+
+/* Contenido */
+
+.container{background: #092346;}
+
+/* 1 seccion */
+
+.section {font-family: 'LatoRegular'; display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: center; margin: 20px 0px 0px 0px ; height: 500px; position: relative;}
+
+.section::before { content: ""; display: block; position: absolute; width: 100%; height: 140%; background-image: url("imagenes/team_fondo_principal.png"); background-size: cover; filter: brightness(0.6);}
+
+.content { position: relative; width: 50%; padding: 20px; opacity: 1.9;}
+
+.content h2 {font-family: 'OswaldSemiBold'; color:white; font-size: 74px; text-align: center; font-weight: bold; margin-bottom: 10px; margin-left: 90px;}
+
+.content h2, .content p, .content button { z-index: 2; float: left; }
+
+.content p {text-align: justify; color: white; font-size: 22px; line-height: 1.5; margin-bottom: 20px; margin-right: 100px; margin-left: 90px; width: 100%; }
+
+/* 2 seccion qr */
+
+.sectiontwo {
+  font-family: 'LatoRegular';
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px 0px 0px 0px;
+  height: 550px;
+  position: relative;
+}
+
+.sectiontwo::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 300%;
+  height: 140%;
+  background-color: #FCC200;
+  background-size: cover;
+  filter: brightness(0.8);
+}
+
+.qr-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.qr-container img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.contenttwo {
+  position: relative;
+  width: 50%;
+  padding: 20px;
+  opacity: 1.9;
+}
+
+.contenttwo h2 {
+  font-family: 'OswaldSemiBold';
+  color: black;
+  font-size: 70px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.contenttwo p {
+  text-align: justify;
+  color: black;
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* seccion 4 de imagen y barra */
+
+.sectionthree { display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center;margin: 150px 0px 90px 0px ; height: 500px; position: relative;}
+
+.sectionthree::before {content: ""; position: absolute; width: 100%; height: 140%; background-image: url("imagenes/nosotros_inicio_imagen_grupal.jpg"); background-size: cover; filter: brightness(0.6);}
+
+.contentthree {position: relative; width: 50%; padding: 20px; opacity: 1.9; }
+
+.contentthree h2 {color:white; font-size: 64px; text-align: center; font-weight: bold; margin-bottom: 10px; }
+
+.contentthree h2, .contenttwo p{z-index: 2;}
+
+.contentthree p {text-align: justify; color: white; font-size: 22px; line-height: 1.5; margin-bottom: 20px;}
+
+/* seccion 5 con barra de nosotros */
+
+.cuadronosotros{padding: 10px 100px 30px 20px; margin-right: -20px;   background-color: rgba(252, 194, 0, 0.6); text-decoration: none; }
+
+.cuadronosotros h2{  opacity: 1.0; color: #FFF; }
+
+.cuadronosotros:hover{transform: scale(1.2);}
+
+
+/* seccion 5 con barra de nosotros */
+
+.cuadronosotros{padding: 0px 100px 10px 20px; margin-right: -20px;  margin-top: 200px;  background-color: rgba(252, 194, 0, 0.6); text-decoration: none; }
+
+.cuadronosotros h2{ font-family: 'OswaldSemiBold';  opacity: 1.0; color: #FFF; }
+
+.cuadronosotros:hover{transform: scale(1.2);}
+
+/* Footer */
+
+.footerconsulta{ font-family: 'LatoRegular'; width: 100%; top: -10px; float: left; position: relative; box-shadow: 0px -6px 10px rgba(0, 0, 0, 0.2) ; z-index: 2; padding: 25px 65px 30px; background: #092346; color: #FFC200; display: grid; grid-template-columns: auto auto auto auto auto; grid-template-rows: 180px 60px; gap: 0px 20px; margin-bottom: -120px; }
+
+.footerconsulta h2{font-size:20px; padding-bottom: 5px;}
+
+.footerconsulta h4{width: auto; font-weight: 300;}
+
+.h2{display: block; font-size: 1.8em; margin-block-start: 0.83em; margin-block-end: 0.83em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold; }
+
+.footerconsulta a{padding: 4px 10px; font-size: 14pt; text-decoration: none; transition: all 0.3s ease; color: #FFF;}
+
+.footerconsulta .logorrss{display: inline-block;}
+
+.fa{display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; webkit-font-smoothing: antialiased; moz-osx-font-smoothing: grayscale; }
+
+.footerconsulta .redessociales{padding-top: 20px; padding-right: 10px; padding-left: 35px; grid-area: 1/ 1/ 2/ 2;}
+
+.footerconsulta .redessociales a{padding: 0px 6px; font-size: 35pt;}
+
+.footerconsulta .titularuno{padding: 20px; grid-area: 1/ 2/ 2/ 2; }
+
+.footerconsulta .titulardos{padding: 20px; grid-area: 1/ 3/ 2/ 4; }
+
+.footerconsulta .titulartres{padding: 20px; grid-area: 1/ 4/ 2/ 4; }
+
+.footerconsulta .logofooter {padding-top: 20px; grid-area: 1/ 5/ 2/ 5; margin-right: -200px;}
+
+.footerconsulta .informacionlegal{font-size: 15px; padding-top: 34px; grid-column: 2/5; grid-row: 2/4; text-align: center;}
+
+.fa-instagram:hover, .fa-facebook-official:hover, .fa-twitter:hover{color: #FFC200; transform: scale(1.1);}
+
+.footerconsulta a:hover{color: #FFC200;}
+
+h4{display: block; margin-block-start: 1.33em; margin-block-end: 1.33em; margin-inline-start: 0px; margin-inline-end: 0px;
+	}q
+
+.footer{display: block;}
+
+
+
+/* Tablet @media */
+
+@media only screen and (max-width:1024px){
+    
+	/* Menu */
+    
+ .contenedor-derecho {margin: 50px -30px 30px 40px;  display: flex; justify-content: space-between; align-items: center; padding: 0 20%;}
+.search-box {margin-top: 48px; display: flex; align-items: center; }
+.search-box input[type="text"] {width: 200px; height: 40px; border: none; border-radius: 20px; padding: 0 20px; font-size: 16px; margin-left: -1%; background: #FCC200; margin-bottom: 20px;}
+.search-box button[type="submit"] {font-size: 24px; color: #FCC200; background-color: transparent; border: none; margin-right: -80%; margin-bottom: 36px;  }
+.profile-icon img {margin-top: 30px; width: 45px; height: 45px; border-radius: 50%; margin-left: 60px;}   
+
+ .sectiontwo {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .qr-container {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .contenttwo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contenttwo h2 {
+    font-size: 48px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .contenttwo p {
+    font-size: 18px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+/* seccion 5 con barra de nosotros */
+
+.cuadronosotros{padding: 0px 100px 0px 20px; margin-right: -20px;  margin-top: 160px;  background-color: rgba(252, 194, 0, 0.6); text-decoration: none; }
+
+.cuadronosotros h2{ font-family: 'OswaldSemiBold';  opacity: 1.0; color: #FFF; }
+
+.cuadronosotros:hover{transform: scale(1.2);}
+    
+  
+.sectionthree { display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; margin: 20% 0px -17px -7% ; height: 500%; position: relative;}
+
+.sectionthree::before {content: ""; position: absolute; width: 100%; height: 155%; background-image: url("imagenes/nosotros_inicio_imagen_grupal.jpg"); background-size: cover; filter: brightness(0.6);}
+    
+  
+    
+}
+
+
+/* Celular @media */
+
+@media only screen and (max-width: 700px){
+    
+    /* Menu */
+    
+	.menusup a:not(:first-child){display:none;}
+	.menusup a.logo{padding-left: 0px; padding-right: 0px; margin-left: 20px;}
+	.menusup a.icono{float: right; display: block; margin-right: 5px; font-size: 30px;}
+	.menusup.responsivo a{float: none; display: block; text-align: left;}
+    input[type="text"][placeholder="Buscar..."] {position: absolute; left: 20%; top: 57%; transform: translateY(530%); }
+    button[type="submit"] i.fa.fa-search { position: absolute; left: 74%; top: 72%; transform: translateY(395%); }
+    .profile-icon {position: absolute; left: 76%; top: 21%; transform: translateY(623%);}
+    
+    .content {
+    width: 70%; /* reducimos el ancho */
+    padding: 10px; /* reducimos el padding */
+  }
+  .content p {
+    margin-right: 0px; /* eliminamos el margen derecho */
+    margin-bottom: 20px; /* añadimos un margen inferior */
+      width: 90%;
+  }
+	
+/* seccion 5 con barra de nosotros */
+
+.cuadronosotros{padding: 0px 100px 0px 20px; margin-right: -20px;  margin-top: 160px;  background-color: rgba(252, 194, 0, 0.6); text-decoration: none; }
+
+.cuadronosotros h2{ font-family: 'OswaldSemiBold';  opacity: 1.0; color: #FFF; }
+
+.cuadronosotros:hover{transform: scale(1.2);}
+    
+  
+.sectionthree { display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; margin: 10% 0px -17px -7% ; height: 500%; position: relative;}
+
+.sectionthree::before {content: ""; position: absolute; width: 98%; height: 100%; background-image: url("imagenes/nosotros_inicio_imagen_grupal.jpg"); background-size: cover; filter: brightness(0.6);}
+    
+    
+    /* Footer */
+    
+    .footerconsulta{display: grid; grid-template-columns: auto; grid-template-rows: 110px 120px 170px 200px; grid-gap: 0px; padding: 35px 20px; text-align: center;}
+	.footerconsulta .redessociales a{margin-top: -10px; font-size:55px; padding-bottom:0px;}
+	.footerconsulta .redessociales {padding-left: 17px; padding-top: 3px; padding-bottom: 5px; grid-column: 1/5; grid-row: 1/2;}
+	.footerconsulta .titularuno {padding-top: 8px; padding-bottom: 0px; grid-column: 1/5; grid-row: 2/2; }
+	.footerconsulta .titulardos {padding-top: 30px; grid-column: 1/5; grid-row: 3/4; }
+	.footerconsulta .titulartres {padding-top: 300px; grid-column: 1/5; grid-row: 2/3; }
+	.footerconsulta .logofooter {padding-top: 430px; grid-column: 1/5; grid-row: 2/2; margin-left: -220px;}
+	.footerconsulta .informacionlegal {text-align: center; padding-top: 60px; padding-right: 20px; padding-left: 20px; font-size: 10pt; grid-column: 1/5; grid-row: 5/5;}
+	.footerconsulta a{font-size: 18px;}
+	.footerconsulta h2{font-size: 18px; }
+	.footerconsulta h4 {width: auto;}
+    .footerconsulta a:hover{color: #FCC200;}   
+
+}
+
+/* Celular mini @media */
+
+@media only screen and (max-width: 500px){
+    
+    .profile-icon{margin-left: -20px;}   
+    
+.content {
+    width: 100%; /* ocupamos todo el ancho */
+    padding: 1px; /* reducimos el padding */
+  }
+  .content p {
+    margin-right: 0px; /* eliminamos el margen derecho */
+    margin-bottom: 20px; /* añadimos un margen inferior */
+      width: 65%;
+      font-size: 17px;
+  }
+    
+      .cuadronosotros{ margin-right: -30px; margin-left: -120px; width: 400px;   background-color: rgba(252, 194, 0, 0.6); }
+    .cuadronosotros h2{ opacity: 1.0; color: #FFF; margin-left: -70px;}
+    
+    .qr-container, .contenttwo{transform:scale(0.8)}
+    
+    /* seccion 5 con barra de nosotros */
+
+    .contentthree{margin-top: -20px; width: 100px; padding: 0px 0px 70px 0px; }
+
+    
+  
+.sectionthree { display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; margin: 10% 0px -17px -7% ; height: 500%; position: relative;}
+
+.sectionthree::before {content: ""; position: absolute; width: 100%; height: 86%; background-image: url("imagenes/nosotros_inicio_imagen_grupal.jpg"); background-size: cover; filter: brightness(0.6);}
+    
+
+    
+    }
+
+@media only screen and (max-width: 400px){
+   .sectionthree { display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; margin: 10% 0px -17px -7% ; height: 500%; position: relative;}
+
+.sectionthree::before {content: ""; position: absolute; width: 100%; height: 66%; background-image: url("imagenes/nosotros_inicio_imagen_grupal.jpg"); background-size: cover; filter: brightness(0.6);} 
+}
+
