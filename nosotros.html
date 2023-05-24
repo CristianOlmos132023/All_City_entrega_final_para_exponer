@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="estilos_nosotros.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="FAVICON"/>
+<script src="javaindex.js"></script>
+<title>Nosotros - All City</title>
+</head>
+ 
+<body>
+<header>
+	
+<!-- Menú -->	
+	
+ <div class="menusup" id="myTopnav">
+	<a href="index_iniciando_sesion.html" class="logo">
+	<img src="imagenes/logo_all_city.png" alt="logo" width="150px" height="auto">
+	</a>
+  
+
+	<a href="index_iniciando_sesion.html">Inicio</a>
+	<a href="artistas.html">Artistas&nbsp;</a>
+	<a href="tienda.html">Tienda</a>
+	<a href="foro.html">Foro&nbsp;</a>
+	<a href="nosotros.html" id="activo">Nosotros</a> 
+    <a href="javascript:void(0);" class="icono" onClick="myFunction()">&#9776;</a> 
+      <div class="contenedor-derecho">
+       <div class="search-box">
+        <form>
+    <input type="text" placeholder="Buscar..." id="buscador">
+    <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+  </div>
+  <div class="profile-icon">
+    <img src="imagenes/foto_perfil_usuario.jpg" alt="Perfil" id="perfildeusuario">
+  </div>
+     </div>    
+        
+  </div>
+</header>
+		
+ <!-- Contenido -->
+	
+    <div class="container">
+        
+     <div class="section">
+  <div class="content">
+    <h2>All City</h2>
+    <p> All city es una web app que tiene como objetivo mostrar la relación entre el  diseño gráfico y el graffiti desde las características gráficas comunes (color, textura, composición, tipografía).</p>
+  </div>
+</div>  
+<div class="sectiontwo">
+  <div class="qr-container">
+      <a href="https://peppermint-alkaline-guanaco.glitch.me/">
+    <img src="imagenes/codigo_qr_ejemplo_interaccion.png" alt="qr">
+          </a>
+  </div>
+  <div class="contenttwo">
+    <h2>Interacción de RA</h2>
+    <p></p>
+  </div>
+</div>
+
+  <div class="sectionthree">
+  <div class="contentthree">
+      <a href="nosotros_team.html" style="text-decoration: none; color: #000;">
+      <div class="cuadronosotros">
+    <h2>Team</h2>
+        </div>
+          </a>
+  </div>
+</div>     
+        
+        
+        
+    </div>
+    
+<!-- Footer -->		
+	
+<footer class="footerconsulta">
+<div class="redessociales">
+<h2>Redes Sociales</h2>
+<div class="logorrss"><a href="https://www.instagram.com/allcityofficial.2023/"><i class="fa fa-instagram"></i></a></div>
+<div class="logorrss"><a href="https://web.facebook.com/all.city.2023/"><i class="fa fa-facebook-official"></i></a></div>
+<div class="logorrss"><a href="https://twitter.com/AllCity2023"><i class="fa fa-twitter"></i></a></div>
+<div class="logorrss"><a href="https://www.linkedin.com/in/all-city-3b3546276/"><i class="fa fa-linkedin-square"></i></a></div>
+</div>
+<div class="titularuno">
+<h2>Explorar&nbsp;</h2>
+<h4><a href="index_iniciando_sesion.html">Inicio&nbsp;</a></h4>
+<h4><a href="artistas.html">Artistas&nbsp;</a></h4>
+</div>
+<div class="titulardos">
+<h2>Servicios&nbsp;</h2>
+<h4><a href="tienda.html">Tienda&nbsp;</a></h4>
+<h4><a href="foro.html">Foro&nbsp;</a></h4>
+</div>
+<div class="titulartres">
+<h2>Acerca de&nbsp;</h2>
+<h4><a href="nosotros.html">Nosotros&nbsp;</a></h4>
+</div>
+<div class="logofooter">
+  <a href="index_iniciando_sesion.html" class="logo">
+	<img src="imagenes/logo_all_city.png" alt="logo" width="150px" height="auto">
+	</a>
+	</div>
+<div class="informacionlegal">
+	
+©All City 2023. Todos los derechos reservados	
+</div>
+</footer>	
+	
+<!-- Scripts -->		
+
+<script>
+    
+ 
+document.querySelector('form').addEventListener('submit', function(evento) {
+  evento.preventDefault(); // Evita que la página se recargue al enviar el formulario
+  const busqueda = document.querySelector('#buscador').value; // Obtiene el valor del campo de entrada de texto
+  if (busqueda) {
+    switch(busqueda) {
+        case 'inicio':
+        window.location.href = 'index_iniciando_sesion.html'; 
+        break;
+      case 'artistas':
+        window.location.href = 'artistas.html';        
+       break;
+      case 'tienda':
+        window.location.href = 'tienda.html'
+        break;
+      case 'foro':
+        window.location.href = 'foro.html';
+        case 'nosotros':
+        window.location.href = 'nosotros.html'
+        break;
+      default:
+        window.location.href = `https://www.google.com/search?q=${busqueda}`; // Redirige al usuario a una búsqueda de Google si la búsqueda no coincide con ninguna de las anteriores
+    }
+  }
+}); 
+    
+document.getElementById("perfildeusuario").onclick = function() {
+    window.location.href = "perfil_usuario_ejemplo.html";
+  };   
+    
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "menusup") {
+    x.className += " responsivo";
+  } else {
+    x.className = "menusup";
+  }
+}
+
+</script>	
+</body>
+</html>

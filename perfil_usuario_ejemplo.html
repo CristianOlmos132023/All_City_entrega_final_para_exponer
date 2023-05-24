@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="estilos_perfil_de_usuario.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="FAVICON"/>
+<script src="javaindex.js"></script>
+<title>Perfil de usuario - All City</title>
+</head>
+ 
+<body>
+<header>
+	
+<!-- Menú -->	
+	
+ <div class="menusup" id="myTopnav">
+	<a href="index.html" class="logo">
+	<img src="imagenes/logo_all_city.png" alt="logo" width="150px" height="auto">
+	</a>
+             
+	<a href="index.html">Inicio</a>
+	<a href="artistas.html">Artistas &nbsp;</a>
+	<a href="tienda.html">Tienda</a>
+	<a href="foro.html">Foro&nbsp;</a>
+	<a href="nosotros.html">Nosotros</a> 
+    <a href="javascript:void(0);" class="icono" onClick="myFunction()">&#9776;</a> 
+      <div class="contenedor-derecho">
+       <div class="search-box">
+        <form>
+    <input type="text" placeholder="Buscar..." id="buscador">
+    <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+  </div>
+  <div class="profile-icon">
+    <img src="imagenes/foto_perfil_usuario.jpg" alt="Perfil" id="perfildeusuario">
+  </div>
+     </div>    
+        
+  </div>
+</header>
+		
+ <!-- Contenido -->
+	
+    <div class="container">
+       
+      <div class="profile">
+      <div class="profile-image">
+        <img src="imagenes/foto_perfil_usuario.jpg" alt="Imagen de Perfil">
+      </div>
+      <h1>Luis Rodríguez</h1>
+    </div>
+    
+    <div class="grid">
+      <div class="grid-item">
+        <h2>Nombres</h2>
+          <br>
+        <input type="text" value="Luis Alberto">
+      </div>
+      <div class="grid-item">
+        <h2>Apellidos</h2>
+          <br>
+        <input type="text" value="Rodríguez Gómez">
+      </div>
+      <div class="grid-item">
+        <h2>Correo Electrónico</h2>
+          <br>
+        <input type="text" value="luisrodriguez07@gmail.com">
+      </div>
+      <div class="grid-item">
+        <h2>Celular</h2>
+          <br>
+        <input type="text" value="+57 350 5282238">
+      </div>
+      <div class="grid-item">
+        <h2>Localidad</h2>
+          <br>
+        <input type="text" value="Bogotá">
+      </div>
+      <div class="grid-item">
+        <h2>Código Postal</h2>
+          <br>
+        <input type="text" value="110110">
+      </div>
+    </div>
+    
+    <div class="logout-button">
+      <a href="index.html">Cerrar Sesión</a>
+    </div>   
+        
+    </div>
+    
+<!-- Footer -->		
+	
+<footer class="footerconsulta">
+<div class="redessociales">
+<h2>Redes Sociales</h2>
+<div class="logorrss"><a href="https://www.instagram.com/allcityofficial.2023/"><i class="fa fa-instagram"></i></a></div>
+<div class="logorrss"><a href="https://web.facebook.com/all.city.2023/"><i class="fa fa-facebook-official"></i></a></div>
+<div class="logorrss"><a href="https://twitter.com/AllCity2023"><i class="fa fa-twitter"></i></a></div>
+<div class="logorrss"><a href="https://www.linkedin.com/in/all-city-3b3546276/"><i class="fa fa-linkedin-square"></i></a></div>
+</div>
+<div class="titularuno">
+<h2>Explorar&nbsp;</h2>
+<h4><a href="index.html">Inicio&nbsp;</a></h4>
+<h4><a href="artistas.html">Artistas &nbsp;</a></h4>
+</div>
+<div class="titulardos">
+<h2>Servicios&nbsp;</h2>
+<h4><a href="tienda.html">Tienda&nbsp;</a></h4>
+<h4><a href="foro.html">Foro&nbsp;</a></h4>
+</div>
+<div class="titulartres">
+<h2>Acerca de&nbsp;</h2>
+<h4><a href="nosotros.html">Nosotros&nbsp;</a></h4>
+</div>
+<div class="logofooter">
+  <a href="index.html" class="logo">
+	<img src="imagenes/logo_all_city.png" alt="logo" width="150px" height="auto">
+	</a>
+	</div>
+<div class="informacionlegal">
+	
+©All City 2023. Todos los derechos reservados	
+</div>
+</footer>	
+	
+<!-- Scripts -->		
+
+<script>
+    
+ 
+document.querySelector('form').addEventListener('submit', function(evento) {
+  evento.preventDefault(); // Evita que la página se recargue al enviar el formulario
+  const busqueda = document.querySelector('#buscador').value; // Obtiene el valor del campo de entrada de texto
+  if (busqueda) {
+    switch(busqueda) {
+        case 'inicio':
+        window.location.href = 'index.html'; 
+        break;
+      case 'artistas':
+        window.location.href = 'artistas.html';        
+       break;
+      case 'tienda':
+        window.location.href = 'tienda.html'
+        break;
+      case 'foro':
+        window.location.href = 'foro.html';
+        case 'nosotros':
+        window.location.href = 'nosotros.html'
+        break;
+      default:
+        window.location.href = `https://www.google.com/search?q=${busqueda}`; // Redirige al usuario a una búsqueda de Google si la búsqueda no coincide con ninguna de las anteriores
+    }
+  }
+});   
+    
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "menusup") {
+    x.className += " responsivo";
+  } else {
+    x.className = "menusup"; }
+}
+
+document.getElementById("perfildeusuario").onclick = function() {
+    window.location.href = "PERFILDEUSUARIO.HTML";};   
+
+</script>	
+</body>
+</html>
+

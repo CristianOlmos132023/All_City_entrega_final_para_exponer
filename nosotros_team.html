@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="estilos_nosotros_team.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="FAVICON"/>
+<script src="javaindex.js"></script>
+<title>Team - All City</title>
+</head>
+ 
+<body>
+<header>
+	
+<!-- Menú -->	
+	
+ <div class="menusup" id="myTopnav">
+	<a href="index_iniciando_sesion.html" class="logo">
+	<img src="imagenes/logo_all_city.png" alt="logo" width="150px" height="auto">
+	</a>
+
+	<a href="index_iniciando_sesion.html">Inicio</a>
+	<a href="artistas.html">Artistas &nbsp;</a>
+	<a href="tienda.html">Tienda</a>
+	<a href="foro.html">Foro&nbsp;</a>
+	<a href="nosotros.html" id="activo">Nosotros</a> 
+    <a href="javascript:void(0);" class="icono" onClick="myFunction()">&#9776;</a> 
+      <div class="contenedor-derecho">
+       <div class="search-box">
+        <form>
+    <input type="text" placeholder="Buscar..." id="buscador">
+    <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+  </div>
+  <div class="profile-icon">
+    <img src="imagenes/foto_perfil_usuario.jpg" alt="Perfil" id="perfildeusuario">
+  </div>
+     </div>    
+        
+  </div>
+</header>
+		
+ <!-- Contenido -->
+	
+    <div class="container">
+  <img src="imagenes/team_fondo_principal.png" alt="Descripción de la imagen" class="imagen">
+     <h1 class="titulo">Nuestro Team</h1>
+ <div class="descripcion-team">
+  <p> Es conformado por Cristian Alejandro Olmos, Diego Andres Palacios, Mariana Valencia Terreros, Juan Sebastian Aldana y Tania Alejandra Martínez, estudiantes de la facultad de diseño gráfico de la Universidad Santo Tomás sede Bogotá.</p>
+    </div>
+  <div class="cuadro">
+   <div class="circle1">
+    
+        </div>
+        <div class="circle2">
+        </div>
+        <div class="circle3">
+    
+        </div>
+        <div class="circle4">
+    
+        </div>
+      
+    <center><h1>Habilidades</h1></center>  
+      
+  </div>
+        
+ <div class="containertwo">
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="imagenes/cristian_olmos_perfil.png" alt="Imagen 1">
+        <div class="info">Cristian Olmos<br>@cristianalejandro_usta13</div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img src="imagenes/tania_martinez_perfil.png" alt="Imagen 2">
+        <div class="info">Tania Martinez <br>@ma.leja_</div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img src="imagenes/mariana_terreros_perfil.png" alt="Imagen 3">
+        <div class="info">Mariana Terreros <br>@mariaana_v</div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="imagenes/diego_palacios_perfil.png" alt="Imagen 4">
+        <div class="info">Diego Palacios <br> @diegopalaa</div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img src="imagenes/sebastian_aldana_perfil.png" alt="Imagen 5">
+        <div class="info">Sebastian Aldana <br> @1cafeina_1</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+        
+        
+    </div>
+    
+    
+    
+<!-- Footer -->		
+	
+<footer class="footerconsulta">
+<div class="redessociales">
+<h2>Redes Sociales</h2>
+<div class="logorrss"><a href="https://www.instagram.com/allcityofficial.2023/"><i class="fa fa-instagram"></i></a></div>
+<div class="logorrss"><a href="https://web.facebook.com/all.city.2023/"><i class="fa fa-facebook-official"></i></a></div>
+<div class="logorrss"><a href="https://twitter.com/AllCity2023"><i class="fa fa-twitter"></i></a></div>
+<div class="logorrss"><a href="https://www.linkedin.com/in/all-city-3b3546276/"><i class="fa fa-linkedin-square"></i></a></div>
+</div>
+<div class="titularuno">
+<h2>Explorar&nbsp;</h2>
+<h4><a href="index_iniciando_sesion.html">Inicio&nbsp;</a></h4>
+<h4><a href="artistas.html">Artistas &nbsp;</a></h4>
+</div>
+<div class="titulardos">
+<h2>Servicios&nbsp;</h2>
+<h4><a href="tienda.html">Tienda&nbsp;</a></h4>
+<h4><a href="foro.html">Foro&nbsp;</a></h4>
+</div>
+<div class="titulartres">
+<h2>Acerca de&nbsp;</h2>
+<h4><a href="nosotros.html">Nosotros&nbsp;</a></h4>
+</div>
+<div class="logofooter">
+  <a href="index_iniciando_sesion.html" class="logo">
+	<img src="imagenes/logo_all_city.png" alt="logo" width="150px" height="auto">
+	</a>
+	</div>
+<div class="informacionlegal">
+	
+©All City 2023. Todos los derechos reservados	
+</div>
+</footer>	
+	
+<!-- Scripts -->		
+
+<script>
+    
+ 
+document.querySelector('form').addEventListener('submit', function(evento) {
+  evento.preventDefault(); // Evita que la página se recargue al enviar el formulario
+  const busqueda = document.querySelector('#buscador').value; // Obtiene el valor del campo de entrada de texto
+  if (busqueda) {
+    switch(busqueda) {
+        case 'inicio':
+        window.location.href = 'index_iniciando_sesion.html'; 
+        break;
+      case 'artistas':
+        window.location.href = 'artistas.html';        
+       break;
+      case 'tienda':
+        window.location.href = 'tienda.html'
+        break;
+      case 'foro':
+        window.location.href = 'foro.html';
+        case 'nosotros':
+        window.location.href = 'nosotros.html'
+        break;
+      default:
+        window.location.href = `https://www.google.com/search?q=${busqueda}`; // Redirige al usuario a una búsqueda de Google si la búsqueda no coincide con ninguna de las anteriores
+    }
+  }
+}); 
+    
+document.getElementById("perfildeusuario").onclick = function() {
+    window.location.href = "perfil_usuario_ejemplo.html";
+  };   
+    
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "menusup") {
+    x.className += " responsivo";
+  } else {
+    x.className = "menusup";
+  }
+}
+
+</script>	
+</body>
+</html>
+

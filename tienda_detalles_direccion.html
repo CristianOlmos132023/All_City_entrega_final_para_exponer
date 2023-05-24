@@ -1,0 +1,194 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="estilos_tienda_detalles_direccion.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="FAVICON"/>
+<script src="javaindex.js"></script>
+<title>Detalles de la dirección - All City</title>
+</head>
+ 
+<body>
+<header>
+	
+<!-- Menú -->	
+	
+ <div class="menusup" id="myTopnav">
+	<a href="index_iniciando_sesion.html" class="logo">
+	<img src="imagenes/logo_all_city.png" alt="logo" width="150px" height="auto">
+	</a>
+             
+
+	<a href="index_iniciando_sesion.html">Inicio</a>
+	<a href="artistas.html">Artistas&nbsp;</a>
+	<a href="tienda.html" id="activo">Tienda</a>
+	<a href="foro.html">Foro&nbsp;</a>
+	<a href="nosotros.html">Nosotros</a> 
+    <a href="javascript:void(0);" class="icono" onClick="myFunction()">&#9776;</a> 
+      <div class="contenedor-derecho">
+       <div class="search-box">
+        <form>
+    <input type="text" placeholder="Buscar..." id="buscador">
+    <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+  </div>
+  <div class="profile-icon">
+    <img src="imagenes/foto_perfil_usuario.jpg" alt="Perfil" id="perfildeusuario">
+  </div>
+     </div>    
+        
+  </div>
+</header>
+    
+    <div class="imagen_fondo">
+    
+        </div>
+
+         <div class="centrar">
+  <a href="tienda.html" class="boton_atras"><i class="fa fa-arrow-left"></i>Regresar a tienda</a>
+</div>
+    
+         <div class="verificadores">
+    <img src="imagenes/verificacion_pasos-pago-uno.png" width="700" alt="sss">
+    </div>
+    
+    
+    
+     <div class="formulario">
+  <h2>Detalles de la dirección</h2>
+  <p>Por favor, introduzca sus datos para continuar con la compra.</p>
+  <form>
+
+    <input type="text" id="nombres" name="nombres" placeholder="Nombres" required>
+<br>
+    <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+<br>
+    <input type="text" id="direccion" name="direccion" placeholder="Dirección" required> 
+<br>    
+    <input type="text" id="ubicacion" name="ubicacion" placeholder="Ubicación" required> 
+ <br>    
+    <input type="tel" id="telefono" name="telefono" placeholder="Teléfono o celular" required> 
+    
+ 
+      <button type="button" id="continuar-btn" onclick="window.location.href='tienda_metodo_pago_confirmacion.html'">Continuar <i class="fa fa-arrow-right"></i></button>
+      
+      
+       
+      
+  </form>
+              
+</div>
+
+<!-- Footer -->		
+	
+<footer class="footerconsulta">
+<div class="redessociales">
+<h2>Redes Sociales</h2>
+<div class="logorrss"><a href="https://www.instagram.com/allcityofficial.2023/"><i class="fa fa-instagram"></i></a></div>
+<div class="logorrss"><a href="https://web.facebook.com/all.city.2023/"><i class="fa fa-facebook-official"></i></a></div>
+<div class="logorrss"><a href="https://twitter.com/AllCity2023"><i class="fa fa-twitter"></i></a></div>
+<div class="logorrss"><a href="https://www.linkedin.com/in/all-city-3b3546276/"><i class="fa fa-linkedin-square"></i></a></div>
+</div>
+<div class="titularuno">
+<h2>Explorar&nbsp;</h2>
+<h4><a href="index_iniciando_sesion.html">Inicio&nbsp;</a></h4>
+<h4><a href="artistas.html">Artistas&nbsp;</a></h4>
+</div>
+<div class="titulardos">
+<h2>Servicios&nbsp;</h2>
+<h4><a href="tienda.html">Tienda&nbsp;</a></h4>
+<h4><a href="foro.html">Foro&nbsp;</a></h4>
+</div>
+<div class="titulartres">
+<h2>Acerca de&nbsp;</h2>
+<h4><a href="nosotros.html">Nosotros&nbsp;</a></h4>
+</div>
+<div class="logofooter">
+  <a href="index_iniciando_sesion.html" class="logo">
+	<img src="imagenes/logo_all_city.png" alt="logo" width="150px" height="auto">
+	</a>
+	</div>
+<div class="informacionlegal">
+	
+©All City 2023. Todos los derechos reservados	
+</div>
+</footer>	
+	
+<!-- Scripts -->		
+
+<script>
+    
+ 
+document.querySelector('form').addEventListener('submit', function(evento) {
+  evento.preventDefault(); // Evita que la página se recargue al enviar el formulario
+  const busqueda = document.querySelector('#buscador').value; // Obtiene el valor del campo de entrada de texto
+  if (busqueda) {
+    switch(busqueda) {
+        case 'inicio':
+        window.location.href = 'index_iniciando_sesion.html'; 
+        break;
+      case 'artistas':
+        window.location.href = 'artistas.html';        
+       break;
+      case 'tienda':
+        window.location.href = 'tienda.html'
+        break;
+      case 'foro':
+        window.location.href = 'foro.html';
+        case 'nosotros':
+        window.location.href = 'nosotros.html'
+        break;
+      default:
+        window.location.href = `https://www.google.com/search?q=${busqueda}`; // Redirige al usuario a una búsqueda de Google si la búsqueda no coincide con ninguna de las anteriores
+    }
+  }
+});   
+    
+document.getElementById("perfildeusuario").onclick = function() {
+    window.location.href = "perfil_usuario_ejemplo.html";
+  };   
+    
+    
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "menusup") {
+    x.className += " responsivo";
+  } else {
+    x.className = "menusup";
+  }
+}
+    
+const buttons = document.querySelector('button');
+const arrowLeft = document.querySelector('.fa-chevron-left');
+const arrowRight = document.querySelector('.fa-chevron-right');
+let translateValue = 0;
+
+arrowRight.addEventListener('click', () => {
+  if (translateValue > -200) {
+    translateValue -= 100;
+    buttons.style.transform = `translateX(${translateValue}%)`;
+  }
+});
+
+arrowLeft.addEventListener('click', () => {
+  if (translateValue < 0) {
+    translateValue += 100;
+    buttons.style.transform = `translateX(${translateValue}%)`;
+  }
+});
+    
+const continuarBtn = document.getElementById('continuar-btn');
+
+continuarBtn.addEventListener('click', function() {
+  window.location.href = 'tienda.html';
+});
+
+   
+
+</script>	
+</body>
+</html>
+

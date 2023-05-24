@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	
+<!-- Etiquetas meta -->	
+	
+<link rel="stylesheet" type="text/css" href="estilos_inicio.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="FAVICON"/>
+<style type="text/css">
+</style>
+<script src="javaindex.js"></script>
+<title>Inicio - All City</title>
+</head>
+ 
+<body>
+<header>
+	
+<!-- Menú -->	
+	
+   <div class="menusup" id="myTopnav">
+	<a href="index.html" class="logo">
+	
+	<img src="imagenes/logo_all_city.png" alt="logo" width="150px" height="auto">
+      
+	</a>
+	<a href="index.html" id="activo">Inicio</a>
+	<a href="#">Artistas&nbsp;</a>
+	<a href="#">Tienda</a>
+	<a href="#">Foro&nbsp;</a>
+	<a href="#">Nosotros</a> 
+    <a href="javascript:void(0);" class="icono" onClick="myFunction()">&#9776;</a> 
+      <div class="contenedor-derecho">
+       <div class="search-box">
+        <form>
+    <input type="text" placeholder="Buscar..." id="buscador">
+    <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+  </div>
+  <div class="profile-icon">
+    <img src="imagenes/perfil_usuario_inicial.jpg" alt="Perfil" id="perfildeusuario">
+  </div>
+     </div>    
+         
+  </div>
+ 
+</header>
+	
+<!-- Formulario -->	
+
+<form id="miFormulario" onsubmit="hideForm(event)">
+  <h2>Inicia sesión</h2>
+  <p>Por favor, introduzca sus datos para iniciar sesión</p>
+  <div class="input-wrapper">
+      
+    <input type="email" class="input-field" placeholder="Correo electrónico" required>
+  </div>
+  <div class="input-wrapper">
+
+    <input type="password" class="input-field" placeholder="Contraseña" required>
+ 
+   <a href="#"> <label for="remember">Recordar contraseña</label></a>
+    <a href="#"><p>¿Olvidó su contraseña?</p></a>
+  </div>
+   <button type="submit" id="miBotonformulario" onclick="redirigir()"><h1>Iniciar sesión</h1></button>
+    <a href="#"><p>¿No tiene una cuenta?</p></a>
+
+  <div class="social-icons">
+    <a href="https://accounts.google.com/v3/signin/identifier?dsh=S-1157411658%3A1682738812115765&continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dgoogle%26rlz%3D1C1ONGR_esCO1016CO1016%26oq%3Dgoogle%26aqs%3Dchrome.0.69i59j0i271l3j69i60l3.1142j0j1%26sourceid%3Dchrome%26ie%3DUTF-8&ec=GAZAAQ&hl=es&ifkv=Af_xneFLrq_q5d9iVi_AXdkbV9P8QvXtwV-gf1cxJ8Ip3oMNYZJdFKWP5KlfK0QODzuPkZ_PvGXS&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><i class="fa fa-google"></i></a>
+    <a href="https://web.facebook.com/?_rdc=1&_rdr"><i class="fa fa-facebook-f"></i></a>
+  </div>
+  <button class="continuar" type="submit">Continuar <i class="fa fa-arrow-right"></i></button>
+  <span class="cerrar-formulario">X</span>
+    
+    </form>
+
+ 		
+    
+<!-- Contenido -->
+	
+<div class="container">
+
+<div class="carousel">
+  <div class="slides">
+    <div class="slide">
+      <img src="imagenes/primer_slider_inicio.jpg" alt="Slide 1">
+    </div>
+    <div class="slide">
+      <img src="imagenes/segundo_slider_inicio.jpg" alt="Slide 2">
+    </div>
+    <div class="slide">
+      <img src="imagenes/tercer_slider_inicio.jpg" alt="Slide 3">
+    </div>
+  </div>
+  <a class="prev" href="#">&#10094;</a>
+  <a class="next" href="#">&#10095;</a>
+  <button class="btn">Ver más</button>
+  <div class="caption">
+	  <h1>¡Bienvenido!&nbsp;&nbsp;</h1>
+	  <p>En All City tendrás la oportunidad de conocer las características gráficas comúnes que existen entre el graffiti y el diseño gráfico, desde un espacio interactivo, atractivo y lleno de color… no te pierdas de esta gran experiencia.</p>
+	</div>
+</div>
+    
+    
+    
+
+<div class="cajauno">
+	<p>“Pintar algo que desafía la ley de la tierra es bueno.” Bansky</p>
+</div>
+	
+<div class="section">
+  <div class="content">
+    <h2>Artistas destacados</h2>
+    <hr>
+    <p>Entérate de aquellos artistas que hacen posible el encontrar características gráficas comunes entre estas dos áreas, encuentra más de sus perfiles y piezas realizadas aquí.</p>
+ 
+      <a href="artistas.html"><button>Explorar</button></a>
+  </div>
+</div>
+	
+<div class="cajados">
+	<img src="imagenes/imagen_tres_inicio.jpg" alt="logo" >
+	 <h2>Antojate</h2>
+  
+    <p>En nuestra sección de tienda podrás encontrar elementos de arte o productos que necesites para implementar tanto en graffiti como en el diseño gráfico con precios asequibles, promociones o la posibilidad de adquirir kits.</p>
+	<a href="tienda.html"><button>Explorar</button></a>
+</div>
+	
+   <div class="sectiontwo">
+  <div class="contenttwo">
+      <a href="nosotros.html" style="text-decoration: none; color: #000;">
+      <div class="cuadronosotros">
+    <h2>Nosotros</h2>
+        </div>
+          </a>
+  </div>
+</div>
+    
+	
+	
+</div>		
+	
+<!-- Footer -->
+	
+<footer class="footerconsulta">
+<div class="redessociales">
+<h2>Redes Sociales</h2>
+<div class="logorrss"><a href="https://www.instagram.com/allcityofficial.2023/"><i class="fa fa-instagram"></i></a></div>
+<div class="logorrss"><a href="https://web.facebook.com/all.city.2023/"><i class="fa fa-facebook-official"></i></a></div>
+<div class="logorrss"><a href="https://twitter.com/AllCity2023"><i class="fa fa-twitter"></i></a></div>
+<div class="logorrss"><a href="https://www.linkedin.com/in/all-city-3b3546276/"><i class="fa fa-linkedin-square"></i></a></div>
+</div>
+<div class="titularuno">
+<h2>Explorar&nbsp;</h2>
+<h4><a href="index.html">Inicio&nbsp;</a></h4>
+<h4><a href="#">Artistas &nbsp;</a></h4>
+</div>
+<div class="titulardos">
+<h2>Servicios&nbsp;</h2>
+<h4><a href="#">Tienda&nbsp;</a></h4>
+<h4><a href="#">Foro&nbsp;</a></h4>
+</div>
+	<div class="titulartres">
+<h2>Acerca de&nbsp;</h2>
+<h4><a href="#">Nosotros&nbsp;</a></h4>
+</div>
+<div class="logofooter">
+  <a href="index.html" class="logo">
+	<img src="imagenes/logo_all_city.png" alt="logo" width="150px" height="auto">
+	</a>
+	</div>
+<div class="informacionlegal">
+	
+©All City 2023. Todos los derechos reservados	
+</div>
+</footer>	
+	
+<!-- Scripts -->
+<script>
+
+    // Agrega este código JavaScript al final del cuerpo de tu página HTML
+document.querySelector('form').addEventListener('submit', function(evento) {
+  evento.preventDefault(); // Evita que la página se recargue al enviar el formulario
+  const busqueda = document.querySelector('#buscador').value; // Obtiene el valor del campo de entrada de texto
+  if (busqueda) {
+    switch(busqueda) {
+        case 'inicio':
+        window.location.href = 'index.html'; // Redirige al usuario a la página "contacto.html" si la búsqueda es igual a "contacto"
+        break;
+      case 'artistas':
+        window.location.href = 'artistas.html'; // Redirige al usuario a la página "contacto.html" si la búsqueda es igual a "contacto"
+        break;
+      case 'tienda':
+        window.location.href = 'tienda.html'; // Redirige al usuario a la página "acerca.html" si la búsqueda es igual a "acerca"
+        break;
+      case 'foro':
+        window.location.href = 'foro.html'; // Redirige al usuario a la página "productos.html" si la búsqueda es igual a "productos"
+        case 'nosotros':
+        window.location.href = 'nosotros.html'; // Redirige al usuario a la página "productos.html" si la búsqueda es igual a "productos"
+        break;
+      default:
+        window.location.href = `https://www.google.com/search?q=${busqueda}`; // Redirige al usuario a una búsqueda de Google si la búsqueda no coincide con ninguna de las anteriores
+    }
+  }
+});
+    
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "menusup") {
+    x.className += " responsivo";
+
+  } else {
+    x.className = "menusup";
+  }
+}
+
+document.getElementById("perfildeusuario").onclick = function() {
+    window.location.href = "index.html";
+  };   
+    
+const carousel = document.querySelector(".carousel");
+const slides = carousel.querySelector(".slides");
+const slideList = slides.querySelectorAll(".slide");
+
+let currentIndex = 0;
+let slideInterval = setInterval(nextSlide, 5000);
+
+function nextSlide() {
+  currentIndex = (currentIndex + 1) % slideList.length;
+  slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+function prevSlide() {
+  currentIndex = (currentIndex - 1 + slideList.length) % slideList.length;
+  slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+const prevButton = carousel.querySelector(".prev");
+const nextButton = carousel.querySelector(".next");
+
+prevButton.addEventListener("click", prevSlide);
+nextButton.addEventListener("click", nextSlide);
+
+carousel.addEventListener("mouseover", () => {
+  clearInterval(slideInterval);
+});
+
+carousel.addEventListener("mouseout", () => {
+  slideInterval = setInterval(nextSlide, 5000);
+});
+
+// FORMULARIO   
+    
+// Esperar 4 segundos antes de mostrar el formulario
+setTimeout(function() {
+  document.getElementById('miFormulario').style.display = 'block';
+}, 4000);
+
+
+// Agregar evento para cerrar el formulario
+document.querySelector('.cerrar-formulario').addEventListener('click', function() {
+  document.getElementById('miFormulario').style.display = 'none';
+});
+
+function hideForm(event) {
+  event.preventDefault();
+  var formulario = document.getElementById("miFormulario");
+  formulario.style.display = "none";
+}
+
+    // Verificar si se ha establecido la cookie
+if (document.cookie.indexOf('formulario_mostrado=') === -1) {
+  // Mostrar el formulario después de 4 segundos
+  setTimeout(function() {
+    document.getElementById('miFormulario').style.display = 'block';
+    
+    // Establecer la cookie para recordar que el formulario ya se mostró
+    var fecha = new Date();
+    fecha.setTime(fecha.getTime() + (30 * 24 * 60 * 60 * 1000)); // Establecer la fecha de expiración en 30 días
+    document.cookie = 'formulario_mostrado=true;expires=' + fecha.toUTCString() + ';path=/';
+  }, 4000);
+}
+	
+  function redirigir() {
+      window.location.href = 'index_iniciando_sesion.html'; // Reemplaza esta URL por la página a la que quieres redirigir
+    }  
+    
+</script>	
+</body>
+</html>
