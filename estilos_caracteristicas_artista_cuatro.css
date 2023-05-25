@@ -68,7 +68,7 @@ html{background-color: #092346;}
 
 /* 1 seccion */
 
-
+.slide h2{color: white; margin-left: 29%; font-family: 'LatoRegular';}
 
 .section {font-family: 'LatoRegular'; display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; margin: 20px 0px 0px 0px ; height: 400px; position: relative;}
 

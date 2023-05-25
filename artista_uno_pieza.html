@@ -111,7 +111,7 @@
   </div>
         
     <div class="contenido_seccion_cuatro_img">
-      <img src="imagenes/juan_sin_miedo_fondo.jpg" alt="Descripción de la imagen">
+      <img src="imagenes/juan_sin_miedo_fondo.jpg" alt="Descripción de la imagen id="efefef">
    </div>  
         </div>        
 
@@ -196,6 +196,36 @@ function myFunction() {
   } else {
     x.className = "menusup";
   }
+}
+    
+// Obtener el elemento en el que se mostrará el texto emergente
+var elemento = document.getElementById('tu-elemento');
+
+// Agregar un evento de escucha para el movimiento del cursor
+elemento.addEventListener('mousemove', mostrarTextoEmergente);
+
+// Función para mostrar el texto emergente
+function mostrarTextoEmergente(evento) {
+  // Crear un elemento <span> para el texto emergente
+  var textoEmergente = document.createElement('span');
+  textoEmergente.textContent = 'Visita la Obra en detalle';
+
+  // Establecer estilos CSS para el texto emergente
+  textoEmergente.style.position = 'absolute';
+  textoEmergente.style.top = evento.clientY + 'px';
+  textoEmergente.style.left = evento.clientX + 'px';
+  textoEmergente.style.backgroundColor = 'black';
+  textoEmergente.style.color = 'white';
+  textoEmergente.style.padding = '5px';
+  textoEmergente.style.fontFamily = 'Arial, sans-serif';
+
+  // Agregar el texto emergente al documento
+  document.body.appendChild(textoEmergente);
+
+  // Eliminar el texto emergente después de 2 segundos
+  setTimeout(function() {
+    document.body.removeChild(textoEmergente);
+  }, 2000);
 }
 
 </script>	

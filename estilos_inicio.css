@@ -37,7 +37,7 @@ overflow-x: hidden;
 
 /* Formulario */
 
-#miFormulario { display: none; position: fixed; transform: translate(160%, -99px); width: 500px; height: 688px; margin: 0px 0px -700px 0px; padding: 30px; background-color: #092346; border-radius: 40px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); text-align: center; z-index: 999;}
+#miFormulario { display: none; position: fixed; transform: translate(100%, -99px); width: 500px; height: 688px; margin: 0px 0px -700px 0px; padding: 30px; background-color: #092346; border-radius: 40px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); text-align: center; z-index: 999;}
 
 #miFormulario h2 {font-family: 'OswaldSemiBold'; font-size: 40px; margin-bottom: 20px; color: white; margin-left: -200px;}
 
@@ -169,7 +169,7 @@ label {font-size: 14px; cursor: pointer;}
 
 /* seccion 3 de imagen flotante, titulo, texto y boton */
 
-.cajados{height: 1100px; color: white; text-align: center; padding:10px; font-family: 'LatoRegular'; position: relative; flex: auto; font-size: 28px;}
+.cajados{height: 700px; color: white; text-align: center; padding:10px; font-family: 'LatoRegular'; position: relative; flex: auto; font-size: 28px;}
 
 .cajados p{font-family: 'LatoRegular'; padding: 20px 0px 0px 1px; text-align: center; width: 50%; margin-left: 24%; flex: auto; }
 
@@ -183,11 +183,11 @@ label {font-size: 14px; cursor: pointer;}
 
 .sectiontwo { display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; margin: 150px 0px 0px 0px ; height: 500%; position: relative;}
 
-.sectiontwo::before {content: ""; position: absolute; width: 100%; height: 355%; background-image: url("imagenes/nosotros_inicio_imagen_grupal.jpg"); background-size: cover; filter: brightness(0.6);}
+.sectiontwo::before {content: ""; position: absolute; width: 100%; height: 149%; background-image: url("imagenes/nosotros_inicio_imagen_grupal.jpg"); background-size: cover; filter: brightness(0.6);}
 
 .contenttwo {position: relative; width: 50%; padding: 20px; opacity: 1.9; }
 
-.contenttwo h2 {color:white; font-size: 64px; text-align: center; font-weight: bold; margin-bottom: 10px; }
+.contenttwo h2 {color:white; font-size: 94px; text-align: center; font-weight: bold; margin-bottom: 10px; }
 
 .contenttwo h2, .contenttwo p{z-index: 2;}
 
@@ -195,7 +195,7 @@ label {font-size: 14px; cursor: pointer;}
 
 /* seccion 5 con barra de nosotros */
 
-.cuadronosotros{padding: 80px 100px 10px 30px; margin-right: -20px; margin-top: 22px;  background-color: rgba(252, 194, 0, 0.6); text-decoration: none; }
+.cuadronosotros{padding: 10px 100px -10px 30px; margin-right: -20px; margin-top: 300px; transform: translateY(-50%); background-color: rgba(252, 194, 0, 0.6); text-decoration: none; }
 
 .cuadronosotros h2{ font-family: 'OswaldSemiBold'; opacity: 1.0; color: #FFF; }
 
@@ -203,7 +203,7 @@ label {font-size: 14px; cursor: pointer;}
 
 /* Footer */
 
-.footerconsulta{ font-family: 'LatoRegular'; width: 100%; top: 200px; float: left; position: relative; box-shadow: 0px -6px 10px rgba(0, 0, 0, 0.2) ; z-index: 2; padding: 25px 65px 30px; background: #092346; color: #FFC200; display: grid; grid-template-columns: auto auto auto auto auto; grid-template-rows: 180px 60px; gap: 0px 20px; }
+.footerconsulta{ font-family: 'LatoRegular'; width: 100%; top: 0px; float: left; position: relative; box-shadow: 0px -6px 10px rgba(0, 0, 0, 0.2) ; z-index: 2; padding: 25px 65px 30px; background: #092346; color: #FFC200; display: grid; grid-template-columns: auto auto auto auto auto; grid-template-rows: 180px 60px; gap: 0px 20px; }
 
 .footerconsulta h2{font-size:20px; padding-bottom: 5px;}
 
@@ -282,7 +282,7 @@ h4{display: block; margin-block-start: 1.33em; margin-block-end: 1.33em; margin-
     
 .sectiontwo { display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; margin: 10% 0px -17px -7% ; height: 500%; position: relative;}
 
-.sectiontwo::before {content: ""; position: absolute; width: 100%; height: 300%; background-image: url("imagenes/nosotros_inicio_imagen_grupal.jpg"); background-size: cover; filter: brightness(0.6);}
+.sectiontwo::before {content: ""; position: absolute; width: 100%; height: 110%; background-image: url("imagenes/nosotros_inicio_imagen_grupal.jpg"); background-size: cover; filter: brightness(0.6);}
 
 /* Formulario */
 
@@ -420,9 +420,14 @@ label {font-size: 14px; cursor: pointer;}
 .sectiontwo { display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; margin: 30% 0px -70px -10% ; height: 130px; position: relative;}	
 	
  /* Seccion 5 con barra de nosotros */      
+  
+.cuadronosotros{padding: 50px 100px -10px 30px; margin-right: -20px; margin-top: 100px;  background-color: rgba(252, 194, 0, 0.6); text-decoration: none;}
+
+    .cuadronosotros h2{font-size: 70px; padding: 10px;}
     
-.cuadronosotros{ padding: 30px 0px 30px 10px; margin-right: -20px; margin-left: -90px;   background-color: rgba(252, 194, 0, 0.6); }
-.cuadronosotros h2{opacity: 1.0; color: #FFF; }
+.sectiontwo::before {content: ""; position: absolute; width: 100%; height: 290%; background-image: url("imagenes/nosotros_inicio_imagen_grupal.jpg"); background-size: cover; filter: brightness(0.6);}
+    
+    .footerconsulta{top: 170px;}
  
  /* Footer */     
     
@@ -477,6 +482,7 @@ label {font-size: 14px; cursor: pointer;}
 .content button{margin-right: 130px;}
 .section {font-family: 'LatoRegular'; display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; margin: 150px 0px 0px 0px ; height: 700px; position: relative;}
 .section::before { content: ""; display: block; position: absolute; width: 300%; height: 130%; background-image: url("imagenes/imagen_dos_inicio.jpg"); background-size: cover; filter: brightness(0.6);}
+
     
   /*  Seccion 3 de imagen flotante, titulo, texto y boton */    
     
@@ -493,8 +499,8 @@ label {font-size: 14px; cursor: pointer;}
     
  /*  Seccion 5 con barra de nosotros */      
     
-.cuadronosotros{ margin-right: -30px; margin-left: -120px; width: 400px;   background-color: rgba(252, 194, 0, 0.6); padding: 10px 0px 0px 0px; }
-.cuadronosotros h2{font-family: 'OswaldSemiBold'; opacity: 1.0; color: #FFF; margin-left: -70px; margin-top: -10px;}
+.cuadronosotros{ margin-right: -30px; margin-left: -120px; width: 500px;   background-color: rgba(252, 194, 0, 0.6); padding: 70px 0px 0px 0px; margin-top: 60px;}
+.cuadronosotros h2{font-family: 'OswaldSemiBold'; opacity: 1.0; color: #FFF; margin-left: -70px; margin-top: -80px;}
     
  /* Formulario */
 
@@ -601,7 +607,7 @@ label {font-size: 14px; cursor: pointer;}
     
  /* seccion 5 con barra de nosotros */   
     
-.cuadronosotros{ margin-right: -30px; margin-left: -45px; width: 360px;   background-color: rgba(252, 194, 0, 0.6); padding: 10px 0px 0px 0px; }
+.cuadronosotros{ margin-right: -30px; margin-left: -55px; width: 360px;   background-color: rgba(252, 194, 0, 0.6); padding: 0px 0px 0px 30px; margin-top: 59px;}
 .cuadronosotros h2{font-size: 50px; font-family: 'OswaldSemiBold'; opacity: 1.0; color: #FFF; margin-left: -170px; margin-top: -14px;}
     
 

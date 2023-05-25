@@ -80,7 +80,7 @@ html{background-color: #092346; }
 
 
 .cuadro {
-
+  display: none;
   position: absolute;
   bottom: -150px;
   left: 50%;
@@ -88,7 +88,7 @@ html{background-color: #092346; }
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 1;
   width: 900px;
-  height: 250px;
+  height: 200px;
 }
 
 .titulo {

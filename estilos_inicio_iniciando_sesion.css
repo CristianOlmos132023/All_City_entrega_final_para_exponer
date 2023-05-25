@@ -122,7 +122,7 @@ overflow-x: hidden;
 
 /* seccion 3 de imagen flotante, titulo, texto y boton */
 
-.cajados{height: 1100px; color: white; text-align: center; padding:10px; font-family: 'LatoRegular'; position: relative; flex: auto; font-size: 28px;}
+.cajados{height: 800px; color: white; text-align: center; padding:10px; font-family: 'LatoRegular'; position: relative; flex: auto; font-size: 28px;}
 
 .cajados p{font-family: 'LatoRegular'; padding: 20px 0px 0px 1px; text-align: center; width: 50%; margin-left: 24%; flex: auto; }
 
@@ -136,11 +136,11 @@ overflow-x: hidden;
 
 .sectiontwo { display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; margin: 150px 0px 0px 0px ; height: 500%; position: relative;}
 
-.sectiontwo::before {content: ""; position: absolute; width: 100%; height: 370%; background-image: url("imagenes/nosotros_inicio_imagen_grupal.jpg"); background-size: cover; filter: brightness(0.6);}
+.sectiontwo::before {content: ""; position: absolute; width: 100%; height: 149%; background-image: url("imagenes/nosotros_inicio_imagen_grupal.jpg"); background-size: cover; filter: brightness(0.6);}
 
 .contenttwo {position: relative; width: 50%; padding: 20px; opacity: 1.9; }
 
-.contenttwo h2 {color:white; font-size: 64px; text-align: center; font-weight: bold; margin-bottom: 10px; }
+.contenttwo h2 {color:white; font-size: 94px; text-align: center; font-weight: bold; margin-bottom: 10px; }
 
 .contenttwo h2, .contenttwo p{z-index: 2;}
 
@@ -148,7 +148,7 @@ overflow-x: hidden;
 
 /* seccion 5 con barra de nosotros */
 
-.cuadronosotros{padding: 80px 100px 10px 30px; margin-right: -20px; margin-top: 22px;  background-color: rgba(252, 194, 0, 0.6); text-decoration: none; }
+.cuadronosotros{padding: 10px 100px -10px 30px; margin-right: -20px; margin-top: 300px; transform: translateY(-50%); background-color: rgba(252, 194, 0, 0.6); text-decoration: none; }
 
 .cuadronosotros h2{ font-family: 'OswaldSemiBold'; opacity: 1.0; color: #FFF; }
 
@@ -156,7 +156,7 @@ overflow-x: hidden;
 
 /* Footer */
 
-.footerconsulta{ font-family: 'LatoRegular'; width: 100%; top: 200px; float: left; position: relative; box-shadow: 0px -6px 10px rgba(0, 0, 0, 0.2) ; z-index: 2; padding: 25px 65px 30px; background: #092346; color: #FFC200; display: grid; grid-template-columns: auto auto auto auto auto; grid-template-rows: 180px 60px; gap: 0px 20px; }
+.footerconsulta{ font-family: 'LatoRegular'; width: 100%; top: 100px; float: left; position: relative; box-shadow: 0px -6px 10px rgba(0, 0, 0, 0.2) ; z-index: 2; padding: 25px 65px 30px; background: #092346; color: #FFC200; display: grid; grid-template-columns: auto auto auto auto auto; grid-template-rows: 180px 60px; gap: 0px 20px; }
 
 .footerconsulta h2{font-size:20px; padding-bottom: 5px;}
 
@@ -227,18 +227,17 @@ h4{display: block; margin-block-start: 1.33em; margin-block-end: 1.33em; margin-
     
 /* Seccion 3 de imagen flotante, titulo, texto y boton */
     
-.cajados{height: 960px; color: white; text-align: center; padding:10px; font-family: 'LatoRegular'; position: relative; flex: auto; font-size: 28px;}
+.cajados{height: 800px; color: white; text-align: center; padding:10px; font-family: 'LatoRegular'; position: relative; flex: auto; font-size: 28px;}
     
 .cajados img{width: 60%; margin-top: 20px;}
-    
+
 /* Seccion 4 de imagen y barra */  
     
 .sectiontwo { display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; margin: 10% 0px -17px -7% ; height: 500%; position: relative;}
 
-.sectiontwo::before {content: ""; position: absolute; width: 100%; height: 300%; background-image: url("imagenes/nosotros_inicio_imagen_grupal.jpg"); background-size: cover; filter: brightness(0.6);}
-
-
-    .cuadronosotros{padding: 10px;}    
+.sectiontwo::before {content: ""; position: absolute; width: 100%; height: 110%; background-image: url("imagenes/nosotros_inicio_imagen_grupal.jpg"); background-size: cover; filter: brightness(0.6);}
+    
+    .footerconsulta{top: 20px;}    
     
 }
 
@@ -283,9 +282,14 @@ button[type="submit"] i.fa.fa-search { position: absolute; left: 74%; top: 72%; 
 .sectiontwo { display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; margin: 30% 0px -70px -10% ; height: 130px; position: relative;}	
 	
  /* Seccion 5 con barra de nosotros */      
+  
+.cuadronosotros{padding: 50px 100px -10px 30px; margin-right: -20px; margin-top: 100px;  background-color: rgba(252, 194, 0, 0.6); text-decoration: none;}
+
+    .cuadronosotros h2{font-size: 70px; padding: 10px;}
     
-.cuadronosotros{ padding: 10px 0px 10px 10px; margin-right: -20px; margin-left: -90px;   background-color: rgba(252, 194, 0, 0.6); }
-.cuadronosotros h2{font-family: 'OswaldSemiBold'; opacity: 1.0; color: #FFF; }
+.sectiontwo::before {content: ""; position: absolute; width: 100%; height: 290%; background-image: url("imagenes/nosotros_inicio_imagen_grupal.jpg"); background-size: cover; filter: brightness(0.6);}
+    
+    .footerconsulta{top: 190px;}
  
  /* Footer */     
     
@@ -356,8 +360,8 @@ button[type="submit"] i.fa.fa-search { position: absolute; left: 74%; top: 72%; 
     
  /*  Seccion 5 con barra de nosotros */      
     
-.cuadronosotros{ margin-right: -30px; margin-left: -120px; width: 400px;   background-color: rgba(252, 194, 0, 0.6); padding: 10px 0px 0px 0px; }
-.cuadronosotros h2{font-family: 'OswaldSemiBold'; opacity: 1.0; color: #FFF; margin-left: -70px; margin-top: -10px;}
+.cuadronosotros{ margin-right: -30px; margin-left: -120px; width: 500px;   background-color: rgba(252, 194, 0, 0.6); padding: 70px 0px 0px 0px; margin-top: 60px;}
+.cuadronosotros h2{font-family: 'OswaldSemiBold'; opacity: 1.0; color: #FFF; margin-left: -70px; margin-top: -80px;}
     
  
 }

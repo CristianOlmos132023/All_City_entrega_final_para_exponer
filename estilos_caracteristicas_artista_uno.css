@@ -107,7 +107,7 @@ html{background-color: #092346;}
 
 .next {right: 20px;}
 
-
+.slide h2{color: white; margin-left: 29%; font-family: 'LatoRegular';}
 
 .container_cubes {
   display: flex;
