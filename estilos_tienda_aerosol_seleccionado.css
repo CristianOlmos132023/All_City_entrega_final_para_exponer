@@ -243,8 +243,8 @@ html{background-color: #092346;}
     font-family: 'LatoRegular';
   font-size: 20px;
   margin: 20px 0px 0px 0px;
-width: 83%;
-    justify-content: center;
+width: 78%;
+  text-align: justify;
 }
 
 .product-info .price {
@@ -276,7 +276,7 @@ width: 83%;
     
     .product-card img{margin-bottom: -20px;}
     
-    .product-card p{margin-left: 80px; width: 600px; margin-top: 40px;}
+    .product-card p{margin-left: 80px; width: 69%; margin-top: 40px; text-align: justify;}
     .product-card h3{margin-left: 70px; margin-bottom: 60px;}
     .product-card hr{margin-left: 80px; margin-top: -40px; }
     
